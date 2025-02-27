@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Tag Open Graph -->
+  <meta property="og:title" content="Portfolio di Marzia Capezzuto">
+  <meta property="og:description" content="Un portfolio di design e sviluppo web">
+  <meta property="og:image" content="https://marziacapezzuto.github.io/Portfolio/images/logo.jpg">
+  <meta property="og:url" content="https:marziacapezzuto.github.io/Portfolio/">
+  
+  <title>Portfolio - Marzia Capezzuto</title>
+
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS (compilato da SCSS) -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="page">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #b7cba8;">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="Images/Logo.png" alt="logo" style="width: 80px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>        
+        <!-- Menu -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="progetti.html">PROGETTI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contatti.html">CONTATTI</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <!-- Sezione Hero -->
+<section class="hero-section">
+  <div class="hero-photo">
+    <img src="Images/Marzia.png" alt="Marzia Capezzuto">
+  </div>
+
+  <div class="hero-text">
+    <div class="text-container">
+      <h3>Mi chiamo <b>Marzia Capezzuto</b> e sono una <b>UX/UI Designer</b></h3>
+      <p class="text-description">
+                Il mio lavoro si concentra sul <b>miglioramento dell'accessibilità</b> e dell'<b>usabilità  dei prodotti digitali</b>, 
+        con l'obiettivo di creare <b>esperienze digitali innovative</b> e coinvolgenti e di rendere le interazioni online intuitive e alla portata di tutti. <br><br>
+        Amo affrontare progetti che richiedono <b>creatività</b> e attenzione ai dettagli,  mettendo sempre al centro 
+        le esigenze degli utenti.  Ogni nuova sfida rappresenta per me un'opportunità per approfondire  le mie 
+        conoscenze, esplorare <b>soluzioni innovative</b> e crescere sia a livello  professionale che personale.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Pulsanti -->
+    <div class="pulsanti">
+      <a href="https://www.linkedin.com/in/marzia-capezzuto/" class="btn-linkedin" target="_blank">Linkedin</a>
+      <a href="File/CV- Marzia Capezzuto.pdf" class="btn-cv" download>Scarica CV</a>
+    </div>
+
+    <!-- Sezione Progetti -->
+    <section class="progetti-section">
+      <h2 class="section-title">PROGETTI</h2>
+      <div class="progetti-grid">
+        <a href="https://www.behance.net/gallery/209391981/Revisione-UX-Last-Minute-Sotto-Casa" target="_blank" rel="noopener noreferrer">
+        <img src="Images/Last Minute Sotto Casa.png" alt="Revisione UX homepage Last Minute Sotto Casa">
+      </a>
+      <a href="https://www.behance.net/gallery/208517327/Brand-Guidelines" target="_blank" rel="noopener noreferrer">
+        <img src="Images/Medit active.png" alt="Brand Guidelines Medit Active">
+        </a>
+        <a href="https://www.behance.net/gallery/208582337/Blog-post-Copywriting" target="_blank" rel="noopener noreferrer">
+        <img src="Images/Hotel pomelia.png" alt="Blog Post Hotel Pomelia">
+        </a>
+        <a href="https://www.behance.net/gallery/210550751/UXUI-Design-Case-study" target="_blank" rel="noopener noreferrer">
+        <img src="Images/Ecodream.png" alt="Case study UX/UI Ecodream">
+        </a>
+      </div>
+      <button class="btn-progetti" onclick="window.location.href='progetti.html'">
+        VAI AI PROGETTI &gt;
+      </button>
+    </section>
+
+    <!-- Sezione Contatti -->
+    <section id="contatti">
+      <h2>CONTATTI</h2>
+      <!-- Modulo di Contatto -->
+<form action="https://formspree.io/f/xrbbdwrk" method="POST">
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Inserisci la tua email">
+  </div>
+
+  <div>
+    <label for="oggetto">Oggetto:</label>
+    <input type="text" id="oggetto" name="oggetto" required placeholder="Inserisci l'oggetto">
+  </div>
+
+  <div>
+    <label for="testo">Messaggio:</label>
+    <textarea id="testo" name="testo" rows="4" required placeholder="Scrivi il tuo messaggio"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">INVIA</button>
+  </div>
+</form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-3">
+      <p>&copy; 2025 Marzia Capezzuto</p>
+    </footer>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
